@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="diseno.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Valula Crochet</title>
+</head>
+<script>
+    // filepath: /Users/valu/Downloads/Trabajos instituto/Grafica asistida/Web Valula/index.html
+    // ...código existente...
+    let actual = 1;
+    const total = 5; // cantidad de fotos
+    setInterval(() => {
+        document.getElementById('foto' + actual).checked = false;
+        actual = actual % total + 1;
+        document.getElementById('foto' + actual).checked = true;
+    }, 3500); // cambia cada 3.5 segundos
+</script>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="Imagenes/logo-blanco-con-fondo-transparente.png" alt="Logo Valula">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Basesycondiciones.html">Bases y condiciones</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="cuidado.html">Cuidado de los productos</a></li>
+                    <li><a href="ubicacion.html"> Ubicación</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+
+        <section class="carrusel">
+            <div class="carrusel-container">
+                <input type="radio" name="carrusel" id="foto1" checked>
+                <input type="radio" name="carrusel" id="foto2">
+                <input type="radio" name="carrusel" id="foto3">
+                <input type="radio" name="carrusel" id="foto4">
+                <input type="radio" name="carrusel" id="foto5">
+
+                <div class="carrusel-fotos">
+                    <div class="carrusel-item"><img src="Imagenes/6.png" alt="Producto 1"></div>
+                    <div class="carrusel-item"><img src="Imagenes/1.png" alt="Producto 2"></div>
+                    <div class="carrusel-item"><img src="Imagenes/3.png" alt="Producto 3"></div>
+                    <div class="carrusel-item"><img src="Imagenes/4.png" alt="Producto 4"></div>
+                    <div class="carrusel-item"><img src="Imagenes/5.png" alt="Producto 5"></div>
+                </div>
+                <div class="carrusel-controles">
+                    <label for="foto1"></label>
+                    <label for="foto2"></label>
+                    <label for="foto3"></label>
+                    <label for="foto4"></label>
+                    <label for="foto5"></label>
+                </div>
+            </div>
+        </section>
+        <!-- Agrega esto después de la sección del carrusel en index.html -->
+
+        <section class="bienvenida">
+            <h1>¡Bienvenid@ a Valula!</h1>
+            <p>Descubrí mi colección de productos especiales, para momentos especiales.</p>
+        </section>
+
+        <section class="redes-news">
+            <div class="redes-sociales">
+                <h2>¡Seguime en redes!</h2>
+                <div class="iconos-redes">
+                    <a href="https://www.instagram.com/valulacrochet/" target="_blank" title="Instagram">
+                        <img src="Imagenes/pngwing.com.png" alt="Instagram">
+                    </a>
+                    <a href="wa.me/5492323353676" target="_blank" title="WhatsApp">
+                        <img src="Imagenes/vecteezy_whatsapp-logo-png-whatsapp-logo-transparent-png-whatsapp_23986631.png"
+                            alt="WhatsApp">
+                    </a>
+                    <a href="https://www.tiktok.com/@valulacrochet" target="_blank" title="Tiktok">
+                        <img src="Imagenes/vecteezy_tiktok-logo-png-tikok-icon-transparent-png-tikok-app-logo-png_18930463.png"
+                            alt="Tiktok">
+                    </a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h2>¡Recibí novedades!</h2>
+                <form>
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 Valula Crochet - Todos los derechos reservados</p>
+        <p2>Los contenidos publicados en estas páginas son
+            en el marco de un trabajo práctico realizado por estudiantes de la
+            materia Gráfica Asistida II de la Escuela de Arte de Luján. Los
+            textos, logotipos, fotografías, tipografías, etc., pueden no ser de
+            su autoría y sólo son utilizados a los fines prácticos del ejercicio.</p>
+    </footer>
+</body>
+<button class="btn-ir-arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</html>
+
+</body>
+
+</html>

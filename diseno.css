@@ -1,0 +1,793 @@
+/* Reset básico */
+body,
+h1,
+p,
+ul {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ba9bd8;
+    color: #ffffff;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ba9bd8;
+    /* corregido */
+    padding: 50px 0 10px 0;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #f8f6fa;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+/* Bienvenida */
+.bienvenida {
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+
+.bienvenida h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.bienvenida p {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+/* ...código existente... */
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.carrusel-container {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px #ba9bd8;
+    background: #fff;
+    margin: 10 auto;
+    /* centrado horizontal */
+}
+
+/* Carrusel */
+/* Reset básico */
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    /* Corregido: antes era 20 */
+    padding: 0;
+    /* Corregido: antes era 20 */
+    box-sizing: border-box;
+}
+
+/* ...resto de tu CSS... */
+
+/* Carrusel */
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.carrusel-container {
+    width: 800px;
+    /* Usa el tamaño que prefieras */
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px #ba9bd8;
+    background: #fff;
+    margin: 0 auto;
+    /* Corregido: antes era 10 auto */
+    position: relative;
+}
+
+.carrusel-container input[type="radio"] {
+    display: none;
+}
+
+.carrusel-fotos {
+    display: flex;
+    width: 4000px;
+    /* 5 fotos x 800px */
+    transition: transform 0.2s;
+}
+
+.carrusel-item {
+    min-width: 800px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Carrusel controles y radios */
+.carrusel-controles {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.carrusel-controles label {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #C29BDE88;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin: 0 4px;
+    transition: background 0.2s, border 0.2s;
+}
+
+#foto1:checked~.carrusel-fotos {
+    transform: translateX(0);
+}
+
+#foto2:checked~.carrusel-fotos {
+    transform: translateX(-800px);
+}
+
+#foto3:checked~.carrusel-fotos {
+    transform: translateX(-1600px);
+}
+
+#foto4:checked~.carrusel-fotos {
+    transform: translateX(-2400px);
+}
+
+#foto5:checked~.carrusel-fotos {
+    transform: translateX(-3200px);
+}
+
+#foto1:checked~.carrusel-controles label[for="foto1"],
+#foto2:checked~.carrusel-controles label[for="foto2"],
+#foto3:checked~.carrusel-controles label[for="foto3"],
+#foto4:checked~.carrusel-controles label[for="foto4"],
+#foto5:checked~.carrusel-controles label[for="foto5"] {
+    background: #ba9bd8;
+    border-color: #ba9bd8;
+}
+
+/* ...resto de tu CSS (redes, newsletter, cuidados, bases, catálogo, etc.)... */
+/* ...resto del código... */
+/* Footer */
+footer {
+    background: #ba9bd8;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+
+
+.redes-news {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 40px auto 0 auto;
+    max-width: 900px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.redes-sociales,
+.newsletter {
+    background: #fff;
+    color: #ba9bd8;
+    border-radius: 16px;
+    padding: 24px 32px;
+    box-shadow: 0 2px 12px #c29bde33;
+    min-width: 260px;
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.redes-sociales h2,
+.newsletter h2 {
+    margin-bottom: 15px;
+    color: #ba9bd8;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.iconos-redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.iconos-redes img:hover {
+    transform: scale(1.15);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #a084ca;
+    width: 200px;
+    font-size: 1em;
+}
+
+.newsletter button {
+    background: #a084ca;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.newsletter button:hover {
+    background: #ba9bd8;
+}
+
+.redes-news {
+    align-items: stretch;
+    /* Hace que ambos hijos tengan el mismo alto */
+}
+
+.redes-sociales,
+.newsletter {
+    min-height: 200px;
+    /* Ajusta según lo que necesites */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* cuidados de producto */
+
+.cuidados {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #c29bde33;
+    padding: 36px 32px;
+}
+
+.cuidados h1 {
+    color: #ba9bd8;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.cuidados .intro {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #4b3269;
+}
+
+.cuidados-tipo {
+    margin-bottom: 32px;
+}
+
+.cuidados-tipo h2 {
+    color: #ba9bd8;
+    margin-bottom: 10px;
+}
+
+.cuidados-tipo ul {
+    list-style: disc inside;
+    color: #4b3269;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.cuidados-tipo li {
+    margin-bottom: 10px;
+    font-size: 1.08em;
+}
+
+.separador {
+    border: none;
+    border-top: 2px dashed #c29bde55;
+    margin: 24px 0;
+}
+
+.cuidados h1 {
+    font-size: 2em;
+    margin-bottom: 24px;
+    color: #ba9bd8;
+    text-align: center;
+}
+
+.cuidados-tipo h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ba9bd8;
+}
+
+/* bases y condic */
+
+.bases {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #c29bde33;
+    padding: 36px 32px;
+}
+
+.bases h1 {
+    color: #ba9bd8;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.bases-bloque {
+    margin-bottom: 28px;
+}
+
+.bases-bloque h2 {
+    color: #ba9bd8;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.bases-bloque ul {
+    list-style: disc inside;
+    color: #4b3269;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.bases-bloque li {
+    margin-bottom: 10px;
+    font-size: 1.08em;
+}
+
+.separador {
+    border: none;
+    border-top: 2px dashed #c29bde55;
+    margin: 24px 0;
+}
+
+.bases h1 {
+    font-size: 2.2em;
+    margin-bottom: 24px;
+}
+
+.bases-bloque h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* CATALOGO*/
+
+.categoria-titulo {
+    color: #ffffff;
+    margin-top: 36px;
+    margin-bottom: 18px;
+    font-size: 1.4em;
+    text-align: center;
+    border-left: 5px solid #ba9bd8;
+    padding-left: 12px;
+}
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    /* Centra los productos */
+    margin-bottom: 24px;
+}
+
+.producto {
+    background: #fff;
+    color: #ba9bd8;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 12px #c29bde33;
+    width: 170px;
+    /* Puedes ajustar el ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 240px;
+    /* Ajusta la altura mínima si lo necesitas */
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    /* Ajusta la altura según prefieras */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.producto h3 {
+    font-size: 1.05em;
+    color: #ba9bd8;
+    margin-bottom: 0;
+}
+
+.producto {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.07) translateY(-8px);
+    box-shadow: 0 8px 24px #ba9bd8aa;
+    z-index: 2;
+}
+
+.producto {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.7s forwards;
+}
+
+.producto:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.producto:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.producto:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.producto:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.producto:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+button,
+.newsletter button {
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+button:hover,
+.newsletter button:hover {
+    background: #ba9bd8;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Animación para bloques de cuidados y bases */
+.cuidados,
+.bases {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.9s forwards;
+    animation-delay: 0.2s;
+}
+
+.cuidados-tipo,
+.bases-bloque {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.7s forwards;
+    animation-delay: 0.4s;
+
+}
+
+.catalogo h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Animación para la bienvenida y el carrusel en el inicio */
+.bienvenida,
+.carrusel {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.9s forwards;
+}
+
+.bienvenida {
+    animation-delay: 0.2s;
+}
+
+.carrusel {
+    animation-delay: 0.1s;
+}
+
+
+body {
+    background: linear-gradient(120deg, #ba9bd8, #a0q84ca, #f8f6fa);
+    background-size: 200% 200%;
+    animation: bgMove 8s ease-in-out infinite;
+}
+
+@keyframes bgMove {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.producto {
+    animation: fadeInUp 0.7s forwards;
+}
+
+body {
+    background: linear-gradient(120deg, #ba9bd8, #a084ca, #f8f6fa);
+    background-size: 200% 200%;
+    animation: bgMove 8s ease-in-out infinite;
+}
+
+.producto {
+    background: #fff;
+    color: #ba9bd8;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 12px #c29bde33;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 240px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.7s forwards;
+
+}
+
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.iconos-redes img {
+    transition: transform 0.3s;
+}
+
+.iconos-redes img:hover {
+    transform: scale(1.15) rotate(-10deg);
+}
+
+.redes-sociales:hover,
+.newsletter:hover {
+    box-shadow: 0 8px 32px #ba9bd8aa;
+    transform: translateY(-6px) scale(1.03);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.cuidados {
+    animation-delay: 0.2s;
+}
+
+.bases {
+    animation-delay: 0.4s;
+}
+
+.catalogo {
+    animation-delay: 0.6s;
+}
+
+
+.btn-ir-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #ba9bd8;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 2em;
+    cursor: pointer;
+    box-shadow: 0 2px 12px #c29bde33;
+    opacity: 0.7;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 1000;
+}
+
+.btn-ir-arriba:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+.mapa {
+    margin: 60px auto;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+}
+
+.mapa h2 {
+    margin-bottom: 16px;
+}
+
+.mapa-contenedor {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px #c29bde33;
+}
+
+
+/* Estética para la sección del mapa */
+.mapa {
+    max-width: 700px;
+    margin: 60px auto 40px auto;
+    background: rgba(186, 155, 216, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 4px 24px #ba9bd855;
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.mapa h2 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.mapa-texto {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.mapa-contenedor {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px #ffffff;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.mapa iframe {
+    width: 100%;
+    min-height: 320px;
+    border: none;
+    display: block;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .mapa {
+        padding: 16px 4px;
+    }
+
+    .mapa iframe {
+        min-height: 200px;
+    }
+}
+
+
+.mapa {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.9s forwards;
+    animation-delay: 0.2s;
+}
+
+.mapa-contenedor iframe {
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.mapa-contenedor iframe:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px #ba9bd8aa;
+}
+
+
+.producto {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
